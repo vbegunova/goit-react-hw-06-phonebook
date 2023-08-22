@@ -1,9 +1,9 @@
 import { Container } from './Filter.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeFilter } from 'redux/filterSlice';
+import { filter } from 'redux/selectors';
 
 const Filter = () => {
-  const filter = useSelector(state => state.filter);
   const dispatch = useDispatch();
 
   const handleFilterChange = e => {
